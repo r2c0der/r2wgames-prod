@@ -1,0 +1,85 @@
+/**
+ * @developer Rayvn Manuel
+ * @purpose r2wGames.com
+ * @copyright 2016
+ * @fileName r2wg_mixins.less
+ */
+
+
+.background_color_default(){
+  background-color:@r2wg_black_charcoal;
+}
+
+.background_color(@color){
+  background-color:@color;
+}
+
+
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.padding(@top, @right, @bottom, @left){
+  padding-top:@top;
+  padding-right:@right;
+  padding-bottom:@bottom;
+  padding-left:@left;
+
+}
+
+
+.padding(@size){
+  padding-top:@size;
+  padding-right:@size;
+  padding-bottom:@size;
+  padding-left:@size;
+
+}
+
+
+.margin(@top, @right, @bottom, @left){
+  margin-top:@top;
+  margin-right:@right;
+  margin-bottom:@bottom;
+  margin-left:@left;
+}
+
+.margin(@size){
+  margin-top:@size;
+  margin-right:@size;
+  margin-bottom:@size;
+  margin-left:@size;
+}
+
+
+.border-radius(@topleft, @topright, @bottomright,@bottomleft) {
+  border-top-left-radius:@topleft;
+  border-top-right-radius:@topright;
+  border-bottom-right-radius:@bottomright;
+  border-bottom-left-radius:@bottomleft;
+}
+
+/**
+Effects two corners on the diagonal
+e.g. topleft + bottom right or topright and bottomleft
+*/
+.border-radius(@radius, @radius) {
+  -webkit-border-radius: @radius @radius;
+  -moz-border-radius: @radius @radius;
+  border-radius: @radius @radius;
+}
+/**
+box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+horizontal: positive => right; left <= negative;
+vertical: positive == down(V)  negative == up(A)
+color: rgba()
+
+**/
+.box-shadow(@horizontal,  @vertical, @blur, @opt_spread:0, @color){
+  -moz-box-shadow: @horizontal @vertical @blur @opt_spread @color;
+  -webkit-box-shadow: @horizontal @vertical @blur @opt_spread @color;
+  box-shadow:  @horizontal @vertical @blur @opt_spread @color;
+}
+
