@@ -9,8 +9,10 @@ Visit us - <a href="http://www.r2wgames.com" target="_blank">r2wGames</a>
 <p>The site was designed to represent the artisans behind the games and gamers. People visiting the studio's facebook page are also encouraged to visit the site. Rather than rely on FB to advertise our kickstarter, the website is the primary spot for this function. It is branded with the Studio's colors and should invoke an over-the-top, neo-retro feel. </p>
 
 <code>//STILL TODO</code>
-The site used a bootstrap template initially. Most of the code has been cleaned up but there are styles which need to be refactored to conform to SMACCS standards and use the LESS mixins created for the site. <br />
-Implement parallax scrolling<br />
+<ul>
+<li>The site used a bootstrap template initially. Most of the code has been cleaned up but there are styles which need to be refactored to conform to SMACCS standards and use the LESS mixins created for the site. </li> 
+<li>Implement parallax scrolling </li> 
+</ul>
 
 <h3>Our Dream: </h3>
 <ul>
